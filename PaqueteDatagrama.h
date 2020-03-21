@@ -5,9 +5,14 @@
 
 class PaqueteDatagrama {
 public:
-    PaqueteDatagrama(char *, unsigned int, char *, int);
 
-    explicit PaqueteDatagrama(unsigned int);
+/*
+    PaqueteDatagrama(unsigned int);
+*/
+
+    PaqueteDatagrama(unsigned int _longitud);
+
+    PaqueteDatagrama(char *_datos, unsigned int _longitud, char *_ip, int _puerto);
 
     ~PaqueteDatagrama();
 
@@ -27,7 +32,7 @@ public:
 
 private:
     char *datos;
-    char ip[16];
+    char ip[16]{};
     unsigned int longitud;
     int puerto;
 };

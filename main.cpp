@@ -11,7 +11,7 @@ using namespace std;
 int main() {
     char num[2];
     SocketDatagrama cliente = SocketDatagrama(7200);
-    PaqueteDatagrama paquete = PaqueteDatagrama(num, 2, "127.0.0.1", 7200);
+    PaqueteDatagrama paquete = PaqueteDatagrama(num, 4, "127.0.0.1", 7200);
     PaqueteDatagrama paqueteRecibido = PaqueteDatagrama(2);
 
     num[0] = 2;

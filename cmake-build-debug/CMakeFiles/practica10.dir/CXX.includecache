@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rjfm/CLionProjects/practica10/PaqueteDatagrama.cpp
+PaqueteDatagrama.h
+/Users/rjfm/CLionProjects/practica10/PaqueteDatagrama.h
+cstdlib
+-
+string
+-
+
+/Users/rjfm/CLionProjects/practica10/PaqueteDatagrama.h
+

@@ -8,8 +8,8 @@
 
 using namespace std;
 
-PaqueteDatagrama::PaqueteDatagrama(char _datos, unsigned int _longitud, char _ip, int _puerto) {
-    datos = new char[_datos];
+PaqueteDatagrama::PaqueteDatagrama(char* _datos, unsigned int _longitud, char* _ip, int _puerto) {
+    datos = new char[_longitud];
     longitud = _longitud;
     memcpy(datos, reinterpret_cast<const void *>(_datos), longitud);
     memcpy(ip, reinterpret_cast<const void *>(_ip), sizeof(ip));
@@ -49,8 +49,4 @@ void PaqueteDatagrama::inicializaIp(char *_ip) {
 
 void PaqueteDatagrama::inicializaDatos(char *_datos) {
     memcpy(datos, _datos, longitud);
-}
-
-PaqueteDatagrama::PaqueteDatagrama(char *, unsigned int, char *, int) {
-
 }
